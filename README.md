@@ -12,7 +12,7 @@ Follow these steps to set up the project on your local machine:
 #### **Step 1: Clone the Repository**
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/ClickToCodeBot.git
+[git clone https://github.com/your-username/ClickToCodeBot.git](https://github.com/AbdualimovBotir/ClickToCodeBot.git)
 ```
 
 #### **Step 2: Open the Project in Your IDE**
@@ -79,15 +79,41 @@ CREATE TABLE replies (
 Configure the database connection and other essential settings in `src/main/resources/application.properties`:
 
 ```properties
+spring.application.name=ClickToCodeBot
+# Server port
+server.port=8080
+
+# Spring datasource configuration
 spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+#spring.datasource.initialization-mode=always
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
-# Time Zone for Uzbekistan
+# Telegram Bot Configuration
+telegram.bot.token=your_bot_token
+telegram.bot.username=your_bot_username
+
+# Logging
+logging.level.org.springframework.web=INFO
+logging.level.com.yourcompany=DEBUG
+
+# Admin credentials (optional, can be changed to secure authentication method)
+#admin.username=admin
+#admin.password=your_admin_password
+
+# Security settings (optional, if you have JWT or session-based authentication)
+#spring.security.user.name=admin
+#spring.security.user.password=admin_password
+
+# Time zone and Locale settings for Uzbekistan
 spring.jackson.time-zone=Asia/Tashkent
 spring.jackson.locale=uz_UZ
+
 ```
 
 ### **3. Running the Application**
@@ -197,4 +223,7 @@ If you want to contribute to this project, feel free to fork this repository, su
 For any inquiries, feel free to contact me:
 
 - **Telegram**: [@botir_d3v](https://t.me/botir_d3v)
-- **GitHub**: [ClickToCodeBot](https://github.com/your-username/ClickToCodeBot)
+- **GitHub**: [git clone https://github.com/your-username/ClickToCodeBot.git](https://github.com/AbdualimovBotir/ClickToCodeBot.git)
+- **Telegram_Chanel**: [@botir\_fullstack\_dev](https://t.me/botir_fullstack_dev)
+- **LinkedIn**: [Botir Abdualimov](https://www.linkedin.com/in/botir-abdualimov-355060259)
+- **Instagram**: [@botir\_d3v](https://www.instagram.com/botir_d3v?igsh=YmE4Nmg4ZmZ1ZWMy&utm_source=qr)
